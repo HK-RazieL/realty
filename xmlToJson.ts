@@ -1,5 +1,4 @@
-import { downloadFile } from "./modules/downloadFile.js";
-import { convertToJSON } from "./modules/convertToJson.js";
+import { downloadFile, convertToJSON } from "./modules/index.ts";
 import fs from "fs";
 
 const exampleXML =

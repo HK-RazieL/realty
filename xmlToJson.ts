@@ -46,7 +46,7 @@ async function constructOutput() {
 (async () => {
   try {
     await downloadFile(exampleXML, xmlFilePath);
-    convertToJSON(process.argv[2], xmlFilePath, jsonFilePath);
+    await convertToJSON(process.argv[2], xmlFilePath, jsonFilePath);
     await constructOutput();
     console.log(output);
   } catch (error) {
